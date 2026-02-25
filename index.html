@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Smart Tuition Classes</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">Smart Tuition Classes</div>
+    <p style="color: aqua; font-size: large;">FOUNDER'S * VEDPRAKASH</p>
+    <div class="menu-toggle" id="menu-btn">
+      ☰
+    </div>
+
+    <div class="nav-links" id="nav-links">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./course.html">Courses</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Achieve Academic Excellence</h1>
+      <p>
+        Personalized Coaching for Classes 6–12th | IIT-JEE | NEET <br>
+        Build strong concepts and achieve top results with experienced mentors.
+      </p>
+  
+      <a href="#" class="btn"><a href="#" class="btn" onclick="openForm()">Join Now</a>
+    </div>
+  </div>
+</section>
+<div class="form-popup" id="admissionForm">
+  <div class="form-container">
+    <span class="close-btn" onclick="closeForm()">&times;</span>
+    <h2>Admission Form</h2>
+
+    <input type="text" placeholder="Student Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+    
+    <select>
+      <option>Select Course</option>
+      <option>Class 6-8</option>
+      <option>Class 9-10</option>
+      <option>IIT-JEE</option>
+      <option>NEET</option>
+    </select>
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </div>
+</div>
+<body>
+
+  <!-- Navbar -->
+
+  <!-- Hero Section -->
+  <section class="hero">
+    ...
+  </section>
+
+  <!-- 👇 YAHAN FEATURES PASTE KARO -->
+ <section class="why-us">
+  <h2 class="section-title">Why Choose Us !!</h2>
+  <div class="why-container">
+    
+    <div class="why-box">
+      <h3>Expert Faculty</h3>
+      <p>Experienced teachers with strong subject knowledge and proven results.</p>
+    </div>
+
+    <div class="why-box">
+      <h3>Personal Attention</h3>
+      <p>Small batch size to focus on every student's performance.</p>
+    </div>
+
+    <div class="why-box">
+      <h3>Regular Tests</h3>
+      <p>Weekly mock tests and performance analysis for improvement.</p>
+    </div>
+
+  </div>
+</section>
+<section class="courses">
+  <h2>Our Courses</h2>
+
+  <div class="course-container">
+
+    <div class="course-box">
+      <h3>Class 10th All Subjects</h3>
+      <p>Complete syllabus with weekly tests.</p>
+      <span>₹1499 / Month</span>
+      <a href="https://wa.me/917379021885?text=Hello%20I%20want%20to%20enroll%20in%20Class%2010th%20Maths" target="_blank">
+  <button>Enroll Now</button>
+</a>
+    </div>
+
+    <div class="course-box">
+      <h3>Class 12th PCM</h3>
+      <p>Board + Competitive Preparation.</p>
+      <span>₹2499 / Month</span>
+     <a href="https://wa.me/917379021885?text=Hello%20I%20want%20to%20enroll%20in%20Class%2010th%20Maths" target="_blank">
+  <button>Enroll Now</button>
+</a>
+    </div>
+
+    <div class="course-box">
+      <h3>ICSC BOARD</h3>
+      <p>Hindi, English, Math Complete Course.</p>
+      <span>₹1999 / Month</span>
+     <a href="https://wa.me/917379021885?text=Hello%20I%20want%20to%20enroll%20in%20Class%2010th%20Maths" target="_blank">
+  <button>Enroll Now</button>
+</a>
+    </div>
+
+  </div>
+</section>
+  <!-- Contact Section -->
+  <section class="contact">
+    ...
+  </section>
+
+</body>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-box">
+      <h3>VedPrakash Coaching Centre</h3>
+      <p>Providing quality education with modern teaching methods. Learn. Grow. Succeed.</p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-box">
+      <h3>Contact Info</h3>
+      <p>Email: prakashved@email.com</p>
+      <p>Phone: +91 7275345850</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 VedPrakash Coaching Centre | All Rights Reserved</p>
+  </div>
+  <div class="social-icons">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-youtube"></i></a>
+  <a href="#"><i class="fab fa-whatsapp"></i></a>
+</div>
+</footer>
+<!-- JAVASCRIPT -->
+ <script>
+function openForm() {
+  document.getElementById("admissionForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("admissionForm").style.display = "none";
+}
+
+  const menuBtn = document.getElementById("menu-btn");
+  const navLinks = document.getElementById("nav-links");
+
+  menuBtn.addEventListener("click", function() {
+    navLinks.classList.toggle("active");
+  });
+</script>
+</body>
+</html>
